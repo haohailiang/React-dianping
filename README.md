@@ -1,2 +1,2 @@
 # 模仿大众点评webapp手记
-windows平台linux模拟工具`xshell`
+[React.js 开发参见问题 Q&A](http://www.imooc.com/article/17442)
