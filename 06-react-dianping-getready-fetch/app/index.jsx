@@ -1,8 +1,8 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { Provider } from 'react-redux'
+import React           from 'react'
+import { render }      from 'react-dom'
+import { Provider }    from 'react-redux'
 import { hashHistory } from 'react-router'
-import configureStore from './store/configureStore'
+import configureStore  from './store/configureStore'
 
 import './static/css/common.less'
 

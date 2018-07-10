@@ -24,6 +24,13 @@ router.post('/api/post', koaBody, function *(next) {
 	this.body = JSON.stringify(this.request.body)
 });
 
+// POSTMAN
+// header
+// Content-Type:application/x-www-form-urlencoded
+// Accept:application/json, text/plain, */*
+// raw
+// a=100&b=200
+
 app.use(router.routes())
    .use(router.allowedMethods());
 
