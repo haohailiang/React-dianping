@@ -1,7 +1,8 @@
-import React from 'react'
-import { render } from 'react-dom'
-import { Provider } from 'react-redux'
+import React          from 'react'
+import { render }     from 'react-dom'
+import { Provider }   from 'react-redux'
 import configureStore from './store/configureStore'
+import Hello          from './containers/Hello'
 
 import './static/css/common.less'
 
@@ -9,9 +10,10 @@ import './static/css/common.less'
 // import fn from './redux-demo.js'
 // fn()
 
-import Hello from './containers/Hello'
 
 const store = configureStore()
+
+console.log( store.getState() );
 
 render(
     <Provider store={store}>
