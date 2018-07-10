@@ -10,6 +10,7 @@ class C extends React.Component {
 	}
 	changeUserInfo() {
 		const actions = this.props.actions
+		// 调用方法触发规则
 		actions.login({
 			userid : '123',
 			city   : 'nanjing'

@@ -2,6 +2,7 @@ import * as actionTypes from '../constants/userinfo'
 
 const initialState = {}
 
+// 定义规则
 export default function userinfo(state = initialState, action) {
 	switch (action.type) {
 		// 登录
