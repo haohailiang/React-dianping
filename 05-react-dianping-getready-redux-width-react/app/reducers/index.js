@@ -4,6 +4,7 @@ import userinfo            from './userinfo'
 
 console.log( userinfo );
 
+// 合并业务规则
 const rootReducer = combineReducers({
 	userinfo
 })
