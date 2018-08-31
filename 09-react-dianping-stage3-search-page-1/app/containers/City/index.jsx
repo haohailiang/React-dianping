@@ -34,7 +34,6 @@ class City extends React.Component {
         // 修改 redux
         const userinfo = this.props.userinfo
         userinfo.cityName = newCity
-        // 更新这个监听的属性
         this.props.userInfoActions.update(userinfo)
 
         // 修改 cookie
