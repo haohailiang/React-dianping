@@ -4,6 +4,8 @@ const initialState = {}
 
 // 定义规则
 export default function userinfo(state = initialState, action) {
+    // 这里会有一些初始化action,但都不会命中
+	console.log( action );
 	switch (action.type) {
 		// 登录
 		case actionTypes.USERINFO_LOGIN:
@@ -15,3 +17,5 @@ export default function userinfo(state = initialState, action) {
 			return state
 	}
 }
+
+// 初始化的时候没有触发任何action, 状态就是initialState

@@ -6,13 +6,9 @@ import Hello          from './containers/Hello'
 
 import './static/css/common.less'
 
-// 引用并执行 redux-demo
-// import fn from './redux-demo.js'
-// fn()
-
-
 const store = configureStore()
 
+console.log( "初始化state查看" );
 console.log( store.getState() );
 
 render(
@@ -21,3 +17,6 @@ render(
     </Provider>,
     document.getElementById('root')
 )
+
+// store里边保存着reducer规则
+// store会订阅action的变化
